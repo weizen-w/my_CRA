@@ -1,0 +1,25 @@
+.btnStyle {
+  height: 50px;
+  margin: 5px;
+  background-color: rgb(10, 198, 60);
+  opacity: 0.7;
+  border-radius: 15px;
+}
+
+.btnStyle:hover {
+  opacity: 1;
+}
+
+.clear {
+  width: 360px;
+  background-color: lightcoral;
+}
+
+.statusStyle {
+  width:max-content;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: beige;
+  margin: 7px;
+}

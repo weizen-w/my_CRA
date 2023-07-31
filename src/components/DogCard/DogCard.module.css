@@ -1,0 +1,11 @@
+.container {
+  background-color: azure;
+  border-radius: 20px;
+  margin: 40px;
+  padding: 40px;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 400px;
+}

@@ -1,0 +1,26 @@
+.divStyle {
+  display: flex;
+  align-items: center;
+}
+
+.btnStyle {
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.minus {
+  background-color: lightcoral;
+}
+
+.plus {
+  background-color: lightgreen;
+}
+
+.valueStyle {
+  margin: 10px;
+  font-size: 40px;
+  text-decoration: brown;
+  font-family: 'Times New Roman', Times, serif;
+}
