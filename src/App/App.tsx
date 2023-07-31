@@ -13,6 +13,7 @@ import Fruit from '../components/Fruit/Fruit';
 import ErrorPage from '../components/ErrorPage/ErrorPage';
 import Flower from '../components/FlowerCard/Flower';
 import NameNazionalize from '../components/NameNationalize/NameNazionalize';
+import Shop from '../components/Shop/Shop';
 
 function App(): JSX.Element {
   return (
@@ -29,6 +30,7 @@ function App(): JSX.Element {
         <Route path="fruit" element={<Fruit title="Banane" color="yellow" weight={100} image="https://assets.stickpng.com/images/580b57fcd9996e24bc43c137.png" />} />
         <Route path="name-nationalize" element={<NameNazionalize />} />
         <Route path="sandwich" element={<Sandwich />} />
+        <Route path="shop" element={<Shop />} />
       </Route>
     </Routes>
   );

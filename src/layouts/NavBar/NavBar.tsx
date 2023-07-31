@@ -16,6 +16,7 @@ export default function NavBar(): JSX.Element {
       <NavLink className={styles.link} to="fruit">Fruit</NavLink>
       <NavLink className={styles.link} to="name-nationalize">Name Nationalize</NavLink>
       <NavLink className={styles.link} to="sandwich">Sandwich</NavLink>
+      <NavLink className={styles.link} to="shop">Shop</NavLink>
     </nav>
   );
 }
