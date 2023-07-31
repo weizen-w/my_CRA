@@ -28,7 +28,7 @@ function App(): JSX.Element {
         <Route path="counter" element={<Counter />} />
         <Route path="dog" element={<DogCard />} />
         <Route path="flower" element={<Flower />} />
-        <Route path="fruit" element={<Fruit title="Banane" color="yellow" weight={100} image="https://assets.stickpng.com/images/580b57fcd9996e24bc43c137.png" />} />
+        <Route path="fruit" element={<Fruit title="Banane" color="yellow" weight={110} image="https://assets.stickpng.com/images/580b57fcd9996e24bc43c137.png" />} />
         <Route path="name-nationalize" element={<NameNazionalize />} />
         <Route path="sandwich" element={<Sandwich />} />
         <Route path="products" element={<Shop />}>
