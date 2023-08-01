@@ -15,6 +15,8 @@ import Flower from '../components/FlowerCard/Flower';
 import NameNazionalize from '../components/NameNationalize/NameNazionalize';
 import Shop from '../components/Shop/Shop';
 import ProductPage from '../components/ProductPage/ProductPage';
+import UsersPage from '../components/UsersPage/UsersPage';
+import UserCard from '../components/UserCard/UserCard';
 
 function App(): JSX.Element {
   return (
@@ -33,6 +35,9 @@ function App(): JSX.Element {
         <Route path="sandwich" element={<Sandwich />} />
         <Route path="products" element={<Shop />}>
           <Route path=":productId" element={<ProductPage />} />
+        </Route>
+        <Route path="users" element={<UsersPage />}>
+          <Route path=":userId" element={<UserCard />} />
         </Route>
       </Route>
     </Routes>
