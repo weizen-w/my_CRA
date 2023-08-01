@@ -15,10 +15,9 @@ export default function NameNazionalize(): JSX.Element {
   function getInfo(arr: any): JSX.Element {
     return (
       arr.map((item: { country_id: string; probability: number }) => (
-      <tr key={item.country_id}>
-        <td>Country: {item.country_id};</td>
-        <td>Probability: {item.probability};</td>
-      </tr>
+      <div key={item.country_id}>
+        <p>Country: {item.country_id}; Probability: {item.probability};</p>
+      </div>
     )));
   }
   return (
@@ -31,11 +30,9 @@ export default function NameNazionalize(): JSX.Element {
         />
       </form>
       <div>
-        <h2>Name: {inputName}</h2>
-        <table>
-          <caption>Result</caption>
-          {inputName === '' ? '' : getInfo(countries)}
-        </table>
+        <h1>Name: {inputName}</h1>
+        <h2>Result</h2>
+        {inputName === '' ? '' : getInfo(countries)}
       </div>
     </div>
   );
