@@ -21,7 +21,7 @@ export default function ProductPage(): JSX.Element {
       setProduct(obj);
     }
     loadProduct();
-  }, [product.id]);
+  }, [productId]);
   return (
     <div>
       <Link to="..">Назад к списку товаров</Link>

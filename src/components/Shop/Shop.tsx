@@ -11,9 +11,6 @@ export default function Shop(): JSX.Element {
     const arr = await res.json();
     setProducts(arr);
   }
-  useEffect(() => {
-    loadProducts();
-  }, []);
   function getProducts(arr: Product[]): JSX.Element {
     return (
       <>
@@ -42,5 +39,8 @@ export default function Shop(): JSX.Element {
       </>
     );
   }
+  useEffect(() => {
+    loadProducts();
+  }, []);
   return productId ? <Outlet /> : getProducts(products);
 }
