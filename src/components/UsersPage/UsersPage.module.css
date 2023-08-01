@@ -1,0 +1,55 @@
+.divStyle {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgba(0, 217, 255, 0.116);
+}
+
+.boxStyle {
+  box-shadow: 0 0 10px black;
+  margin: 20px;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+  background-color: rgb(255, 255, 255);
+}
+
+.boxCardStyle {
+  margin: 5px;
+  border: 2px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  column-gap: 10px;
+  background: rgb(255, 157, 0);
+  background: linear-gradient(198deg, rgba(255, 157, 0, 0.600) 0%, rgba(255, 255, 255, 0.600) 51%, rgba(21, 251, 90, 0.600) 100%);
+  box-shadow: 0 0 10px;
+}
+
+.nameStyle {
+  border-top: 2px solid black;
+  padding: 10px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9e00;
+  color: black;
+}
+
+.imgStyle {
+  border: 10px ridge rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px 5px 20px 5px;
+  height: 200px;
+}
+
+.datenBoxStyle {
+  background-color: rgba(255, 255, 255, 0.656);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+

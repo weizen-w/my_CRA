@@ -1,0 +1,35 @@
+.btnStyle {
+  
+}
+
+.boxStyle {
+
+}
+
+.imgStyle {
+  margin: 20px;
+  height: 200px;
+}
+
+.nameStyle {
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.tableStyle {
+  margin: 20px;
+  background-color: antiquewhite;
+  border: 3px;
+  border-style: double;
+  /* border-color: white; */
+  word-spacing: 5px;
+}
+
+.firstColumnStyle {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.secondColumnStyle {
+  padding: 10px;
+}
