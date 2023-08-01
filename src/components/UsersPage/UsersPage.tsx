@@ -15,9 +15,9 @@ export default function UsersPage(): JSX.Element {
     return (
       <div className={styles.divStyle}>
         {arr.map((user: User) => (
-          <div className={styles.boxStyle}>
+          <div className={styles.boxStyle} key={user.id}>
             <Link to={String(user.id)} style={{ textDecoration: 'none' }}>
-              <h1 className={styles.nameStyle} key={user.id}>
+              <h1 className={styles.nameStyle}>
                 {user.name.lastname}, {user.name.firstname}
               </h1>
             </Link>

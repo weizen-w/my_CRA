@@ -15,7 +15,7 @@ export default function Shop(): JSX.Element {
     return (
       <>
         {arr.map((product: Product) => (
-          <Link to={String(product.id)} style={{ textDecoration: 'none' }}>
+          <Link to={String(product.id)} style={{ textDecoration: 'none' }} key={product.id}>
             <h3 className={styles.h3Style}>{product.title} </h3>
             <div className={styles.blockStyle}>
               <img
@@ -23,7 +23,7 @@ export default function Shop(): JSX.Element {
                 src={product.image}
                 alt={product.id.toString()}
               />
-              <ul className={styles.ulStyle} key={product.id}>
+              <ul className={styles.ulStyle}>
                 <p className={styles.idStyle}>art.# {product.id}</p>
                 <p className={styles.priceStyle}>Price: {product.price} €</p>
                 <p className={styles.descriptionStyle}>

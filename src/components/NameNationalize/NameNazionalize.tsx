@@ -13,13 +13,13 @@ export default function NameNazionalize(): JSX.Element {
   }
   useEffect(fetchNameNazi, [inputName]);
   function getInfo(arr: any): JSX.Element {
-    const res = arr.map((item: { country_id: string; probability: number }) => (
+    return (
+      arr.map((item: { country_id: string; probability: number }) => (
       <tr key={item.country_id}>
         <td>Country: {item.country_id};</td>
         <td>Probability: {item.probability};</td>
       </tr>
-    ));
-    return <p>{res}</p>;
+    )));
   }
   return (
     <div>
@@ -32,7 +32,10 @@ export default function NameNazionalize(): JSX.Element {
       </form>
       <div>
         <h2>Name: {inputName}</h2>
-        {getInfo(countries)}
+        <table>
+          <caption>Result</caption>
+          {inputName === '' ? '' : getInfo(countries)}
+        </table>
       </div>
     </div>
   );
