@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Product from '../Shop/types/Product';
+import styles from '../Shop/Shop.module.css';
 
 export default function ProductPage(): JSX.Element {
   const { productId } = useParams();
@@ -24,18 +25,20 @@ export default function ProductPage(): JSX.Element {
   return (
     <div>
       <Link to="..">Назад к списку товаров</Link>
-      <h3>{product.title} </h3>
-      <ul>
-        <li>#{product.id}</li>
-        <li>Price: {product.price} €</li>
-        <li>Description: {product.description}</li>
-        <li>Category: {product.category}</li>
+      <h3 className={styles.h3Style}>{product.title} </h3>
+      <div className={styles.blockStyle}>
         <img
-          style={{ width: '100px' }}
+          className={styles.imgStyle}
           src={product.image}
           alt={product.id.toString()}
         />
-      </ul>
+        <ul className={styles.ulStyle}>
+          <p className={styles.idStyle}>art.# {product.id}</p>
+          <p className={styles.priceStyle}>Price: {product.price} €</p>
+          <p className={styles.descriptionStyle}>Description: {product.description}</p>
+          <p className={styles.categoryStyle}>Category: {product.category}</p>
+        </ul>
+      </div>
     </div>
   );
 }
